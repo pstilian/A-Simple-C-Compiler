@@ -1,5 +1,5 @@
-/* I pledge to my Honor that I have not cheated, and will not cheat, on this assignment Peter Stilian*/
-/*Lexer for Diminishd Java*/
+/*Peter Stilian, Jonathan Sellier, Anthony Long*/
+/*Lexer for (most of) C*/
 
 %option yylineno
 %option noyywrap
@@ -11,7 +11,8 @@
 %}
 
 digit  [0-9]
-id [a-zA-Z][a-zA-Z0-9]+
+id [a-zA-Z][a-zA-Z0-9]*
+char [a-zA-z0-9!"\$#%&'\(\)\*\+,-\./<;=:>\?[\\]\^_\{\|\}~]
 wspace [ \t\r\n]+
 
 %%
